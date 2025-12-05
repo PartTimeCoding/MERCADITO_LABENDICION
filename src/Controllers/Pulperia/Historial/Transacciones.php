@@ -1,9 +1,9 @@
 <?php
 
-namespace Controllers\Libreria\Historial;
+namespace Controllers\Pulperia\Historial;
 
 use Controllers\PublicController;
-use Dao\Libreria\Ordenes;
+use Dao\Pulperia\Ordenes;
 use Utilities\Security;
 
 class Transacciones extends PublicController
@@ -20,7 +20,7 @@ class Transacciones extends PublicController
         }
 
         \Views\Renderer::render(
-            "libreria/historial/transacciones",
+            "pulperia/historial/transacciones",
             ['transacciones' => $transacciones]
         );
     }

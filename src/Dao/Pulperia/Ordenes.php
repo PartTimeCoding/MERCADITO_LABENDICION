@@ -1,6 +1,6 @@
 <?php
 
-namespace Dao\Libreria;
+namespace Dao\Pulperia;
 
 class Ordenes extends \Dao\Table
 {
@@ -20,9 +20,9 @@ class Ordenes extends \Dao\Table
         self::executeNonQuery($sql, $params);
 
         $sqlGet = "SELECT ordenId FROM ordenes 
-               WHERE usercod = :usercod 
-               ORDER BY fechaOrden DESC 
-               LIMIT 1";
+                   WHERE usercod = :usercod 
+                   ORDER BY fechaOrden DESC 
+                   LIMIT 1";
 
         $orden = self::obtenerUnRegistro($sqlGet, ["usercod" => $datos['usercod']]);
 
@@ -40,9 +40,9 @@ class Ordenes extends \Dao\Table
 
     public static function obtenerPedidosPorOrden($ordenId)
     {
-        $sql = "SELECT p.*, l.libroNombre, l.libroImgUrl 
+        $sql = "SELECT p.*, pr.productoNombre, pr.productoImgUrl 
                 FROM pedidos p
-                JOIN libros l ON p.libroId = l.libroId
+                JOIN productos pr ON p.productoId = pr.productoId
                 WHERE p.ordenId = :ordenId";
 
         return self::obtenerRegistros($sql, ["ordenId" => $ordenId]);

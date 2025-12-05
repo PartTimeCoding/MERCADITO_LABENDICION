@@ -1,6 +1,6 @@
 <?php
 
-namespace Dao\Libreria\Historial;
+namespace Dao\Pulperia\Historial;
 
 class Transacciones extends \Dao\Table
 {

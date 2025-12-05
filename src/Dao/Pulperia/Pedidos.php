@@ -1,19 +1,19 @@
 <?php
 
-namespace Dao\Libreria;
+namespace Dao\Pulperia;
 
 class Pedidos extends \Dao\Table
 {
     public static function crearPedido($datos)
     {
         $sql = "INSERT INTO pedidos 
-                (ordenId, libroId, cantidad, precioUnitario) 
+                (ordenId, productoId, cantidad, precioUnitario) 
                 VALUES 
-                (:ordenId, :libroId, :cantidad, :precioUnitario)";
+                (:ordenId, :productoId, :cantidad, :precioUnitario)";
 
         $params = [
             "ordenId" => $datos['ordenId'],
-            "libroId" => $datos['libroId'],
+            "productoId" => $datos['productoId'],
             "cantidad" => $datos['cantidad'],
             "precioUnitario" => $datos['precioUnitario']
         ];
