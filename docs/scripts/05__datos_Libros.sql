@@ -1,24 +1,5 @@
-
-INSERT INTO editoriales (nombreEditorial) VALUES
-('HCH'),
-('Sudamericana'),
-('Francisco de Robles'),
-('Secker & Warburg'),
-('Bloomsbury'),
-('Allen & Unwin'),
-('T. Egerton'),
-('Clásicos Griegos'),
-('Sudamericana'),
-('Rocco'),
-('Ballantine Books'),
-('J.B. Lippincott & Co.'),
-('Archibald Constable'),
-('Scholastic'),
-('Planeta');
-
-INSERT INTO `libros` (
-    `libroNombre`, `libroDescripcion`, `libroAñoPublicacion`, `autorId`, `editorialId`, 
-    `libroGenero`, `libroPrecio`, `libroImgUrl`, `libroStock`, `libroEstado`
+INSERT INTO `productos` (
+    `productoNombre`, `productoDescripcion`,`productoPrecio`, `productoImgUrl`, `productoStock`, `productoEstado`
 ) VALUES
 ('El eco de los sueños', 'Una historia de superación y esperanza en tiempos difíciles.', 2015, 1, 1, 'Drama', 12.99, 'img1.jpg', 10, 'ACT'),
 ('Sombras del pasado', 'Thriller psicológico ambientado en Londres.', 2018, 2, 2, 'Suspenso', 15.50, 'img2.jpg', 5, 'ACT'),

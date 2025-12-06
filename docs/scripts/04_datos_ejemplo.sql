@@ -6,7 +6,7 @@ INSERT INTO `roles` (`rolescod`, `rolesdsc`, `rolesest`) VALUES
 -- Estas son las funciones para el ADMIN
 INSERT INTO `funciones` (`fncod`, `fndsc`, `fnest`, `fntyp`) VALUES
 ('GEST_USUARIOS', 'Gestión de usuarios', 'ACT', 'SIS'),
-('GEST_LIBROS', 'Gestión de libros', 'ACT', 'NEG'),
+('GEST_LIBROS', 'Gestión de productos', 'ACT', 'NEG'),
 ('GEST_PEDIDOS', 'Gestión de pedidos', 'ACT', 'NEG'),
 ('VER_HISTORIAL', 'Ver historial completo', 'ACT', 'REP'),
 ('MOD_ESTADOS', 'Modificar estados de pedidos', 'ACT', 'NEG');
@@ -20,7 +20,7 @@ INSERT INTO `funciones` (`fncod`, `fndsc`, `fnest`, `fntyp`) VALUES
 -- Relacion entre funciones y roles del ADMIN
 INSERT INTO `funciones_roles` (`rolescod`, `fncod`, `fnrolest`) VALUES
 ('ADMIN', 'GEST_USUARIOS', 'ACT'),
-('ADMIN', 'GEST_LIBROS', 'ACT'),
+('ADMIN', 'GEST_PRODUCTOS', 'ACT'),
 ('ADMIN', 'GEST_PEDIDOS', 'ACT'),
 ('ADMIN', 'VER_HISTORIAL', 'ACT'),
 ('ADMIN', 'MOD_ESTADOS', 'ACT');

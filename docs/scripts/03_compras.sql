@@ -10,11 +10,11 @@ CREATE TABLE `ordenes` (
 CREATE TABLE `pedidos` (
     `pedidoId` INT AUTO_INCREMENT PRIMARY KEY,
     `ordenId` INT NOT NULL,
-    `libroId` INT NOT NULL,
+    `productoId` INT NOT NULL,
     `cantidad` INT NOT NULL,
     `precioUnitario` DECIMAL(12, 2) NOT NULL,
     FOREIGN KEY (`ordenId`) REFERENCES `ordenes`(`ordenId`),
-    FOREIGN KEY (`libroId`) REFERENCES `libros`(`libroId`)
+    FOREIGN KEY (`productoId`) REFERENCES `productos`(`productoId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `transacciones` (
