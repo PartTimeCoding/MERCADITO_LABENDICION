@@ -5,7 +5,7 @@
       <h2>Orden Aceptada!</h2>
     </div>
     <div class="confirmacion-body">
-      <a href="index.php?page=libreria_historial_transacciones" class="btn-historial">
+      <a href="index.php?page=Libreria_Historial_Transacciones" class="btn-historial">
         Ver mi historial de compras
       </a>
     </div>

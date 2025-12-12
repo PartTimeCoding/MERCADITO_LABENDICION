@@ -1,5 +1,5 @@
 <section class="fullCenter">
-  <form class="grid" method="post" action="index.php?page=sec_register">
+  <form class="grid" method="post" action="index.php?page=Sec_Register">
     <section class="depth-1 row col-12 col-m-8 offset-m-2 col-xl-6 offset-xl-3">
       <h1 class="col-12">Crea tu cuenta</h1>
     </section>

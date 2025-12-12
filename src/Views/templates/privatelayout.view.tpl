@@ -36,9 +36,9 @@
       </ul>
     </nav>
     {{with login}}
-    <span class="cart-container"><a href="index.php?page=checkout_checkout" style="text-decoration: none; color: inherit;">
+    <span class="cart-container"><a href="index.php?page=Checkout_Checkout" style="text-decoration: none; color: inherit;">
     <i class="fa-solid fa-cart-shopping"></i>{{if ~CART_ITEMS}}{{~CART_ITEMS}}{{endif ~CART_ITEMS}}</a></span>
-    <span class="username">{{userName}} <a href="index.php?page=sec_logout"><i class="fas fa-sign-out-alt"></i></a></span>
+    <span class="username">{{userName}} <a href="index.php?page=Sec_Logout"><i class="fas fa-sign-out-alt"></i></a></span>
     {{endwith login}}
   </header>
   <main>

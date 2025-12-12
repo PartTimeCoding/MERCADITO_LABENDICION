@@ -6,11 +6,6 @@ use Dao\Table;
 
 class Catalogo extends Table
 {
-    public const generos = [
-        'Fantasía',
-        'Terror',
-        'Ciencia Ficción'
-    ];
 
     public static function ObtenerLibros(): array
     {

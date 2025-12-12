@@ -32,7 +32,7 @@
         {{endfor PUBLIC_NAVIGATION}}
       </ul>
     </nav>
-    <span class="cart-container"><a href="index.php?page=checkout_checkout" style="text-decoration: none; color: inherit;">
+    <span class="cart-container"><a href="index.php?page=Checkout_Checkout" style="text-decoration: none; color: inherit;">
     <i class="fa-solid fa-cart-shopping"></i>{{if ~CART_ITEMS}}{{~CART_ITEMS}}{{endif ~CART_ITEMS}}</a></span>
   </header>
   <main>
