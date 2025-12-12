@@ -43,5 +43,3 @@ INSERT INTO `usuario` (`useremail`, `username`, `userpswd`, `userfching`, `usere
 INSERT INTO `roles_usuarios` (`usercod`, `rolescod`, `roleuserfch`) VALUES (1, 'ADMIN', NOW());
 
 INSERT INTO `roles_usuarios` (`usercod`, `rolescod`, `roleuserfch`) VALUES (2, 'CLIENTE', NOW());
-
-SELECT a.*, b.crrctd, b.crrprc, b.crrfching FROM libros a inner join carretilla b on a.libroId = b.libroId where b.usercod=:usercod;", ["usercod" => $usercod]
