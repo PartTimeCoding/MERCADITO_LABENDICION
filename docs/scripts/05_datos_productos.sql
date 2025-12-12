@@ -1,28 +1,19 @@
---DIS de Disponible, AGO de Agotado
-INSERT INTO `productos` (
-    `productoNombre`, `productoDescripcion`,`productoPrecio`, `productoImgUrl`, `productoStock`, `productoEstado`
+INSERT INTO `libros` (
+    `libroNombre`, `libroDescripcion`, `libroAñoPublicacion`, `autorId`, `editorialId`, 
+    `libroGenero`, `libroPrecio`, `libroImgUrl`, `libroStock`, `libroEstado`
 ) VALUES
-    ('Manzana', 'Manzanas frescas, crujientes y dulces.', 5.50, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/manzana.png', 100, 'DIS'),
-    ('Leche', 'Cartón de Leche entera.', 45, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/cartonLeche.jpg', 50, 'DIS'),
-    ('Pan Integral', 'Pan integral recién horneado, 400 g.', 27.5, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/panIntegral.jpg', 30, 'DIS'),
-    ('Arroz', 'Arroz integral de 1 kg.', 12.5, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/arroz.jpg', 60, 'DIS'),
-    ('Pasta', 'Pasta de trigo duro, 500 g (espaguetis).', 31.5, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/pasta.jpg', 40, 'DIS'),
-    ('Aceite de Oliva', 'Aceite de oliva virgen extra, 500 ml.', 20, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/aceiteOliva.jpg', 20, 'DIS'),
-    ('Huevos', 'Huevos frescos de gallinas libres, docena.', 55.5, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/huevos.jpg', 25, 'DIS'),
-    ('Tomates', 'Tomates maduros y jugosos, 1 kg.', 12, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/tomates.jpg', 40, 'DIS'),
-    ('Zanahorias', 'Zanahorias frescas, orgánicas, 1 kg.', 6, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/zanahorias.jpg', 35, 'DIS'),
-    ('Cebollas', 'Cebollas moradas, 1 kg.', 8, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/cebollas.jpg', 60, 'DIS'),
-    ('Pollo', 'Pechugas de pollo frescas, 1 kg.', 37.5, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/pollo.jpg', 15, 'DIS'),
-    ('Pescado', 'Filetes de pescado fresco, 500 g.', 29.5, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/pescado.jpg', 10, 'DIS'),
-    ('Yogur', 'Yogur natural sin azúcares añadidos, 150 g.', 14.5, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/yogur.jpg', 50, 'DIS'),
-    ('Nueces', 'Nueces mixtas, 200 g.', 18.5, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/nueces.jpg', 25, 'DIS'),
-    ('Azúcar', 'Azúcar blanca, 1 kg.', 9, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/azucar.jpg', 70, 'DIS'),
-    ('Harina', 'Harina de trigo, 1 kg.', 11.5, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/harina.jpg', 50, 'DIS'),
-    ('Sal', 'Sal de mesa, 500 g.', 3.5, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/sal.jpg', 100, 'DIS'),
-    ('Café', 'Café molido, 250 g.', 21.5, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/cafe.jpg', 40, 'DIS'),
-    ('Té', 'Té verde, 20 bolsitas.', 19.5, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/te.jpg', 30, 'DIS'),
-    ('Salsa de Tomate', 'Salsa de tomate orgánica, 350 g.', 13, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/salsaDeTomate.jpg', 25, 'DIS'),
-    ('Galletas', 'Galletas de avena, paquete de 200 g.', 10, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/galletas.jpg', 50, 'DIS'),
-    ('Chocolate', 'Chocolate negro, 100 g.', 14, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/chocolate.jpg', 40, 'DIS'),
-    ('Barritas Energéticas', 'Barritas energéticas de frutos secos, paquete de 6 unidades.', 15, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/barraEnergetica.jpg', 20, 'DIS'),
-    ('Frutos Secos', 'Mezcla de frutos secos, 200 g.', 16, '/workspaces/Mercadito-LaBendicion/MERCADITO_LABENDICION/public/imgs/productos/frutosSecos.jpg', 30, 'DIS');
+('El eco de los sueños', 'Una historia de superación y esperanza en tiempos difíciles.', 2015, 1, 1, 'Drama', 12.99, 'img1.jpg', 10, 'ACT'),
+('Sombras del pasado', 'Thriller psicológico ambientado en Londres.', 2018, 2, 2, 'Suspenso', 15.50, 'img2.jpg', 5, 'ACT'),
+('Luz en el abismo', 'Un viaje introspectivo a través de los miedos más profundos.', 2020, 3, 3, 'Ficción', 9.75, 'img3.jpg', 12, 'ACT'),
+('Crónicas del fuego', 'Una saga épica en tierras místicas.', 2011, 4, 4, 'Fantasía', 18.00, 'img4.jpg', 20, 'ACT'),
+('El susurro del viento', 'Romance en la campiña francesa.', 2016, 5, 5, 'Romance', 14.25, 'img5.jpg', 7, 'ACT'),
+('Código cero', 'Tecnología, conspiraciones y secretos gubernamentales.', 2019, 6, 6, 'Ciencia Ficción', 17.99, 'img6.jpg', 9, 'ACT'),
+('Vidas paralelas', 'Historias entrelazadas que desafían el destino.', 2012, 7, 7, 'Drama', 11.50, 'img7.jpg', 3, 'ACT'),
+('Tras la niebla', 'Una novela policial en un pueblo costero.', 2014, 8, 8, 'Misterio', 13.30, 'img8.jpg', 6, 'ACT'),
+('Memorias de un náufrago', 'Aventura y supervivencia en una isla desierta.', 2010, 9, 9, 'Aventura', 10.99, 'img9.jpg', 15, 'ACT'),
+('El legado de Avalon', 'Magia antigua y caballeros legendarios.', 2021, 10, 10, 'Fantasía', 19.99, 'img10.jpg', 11, 'ACT'),
+('Vértigo urbano', 'La vida moderna en una gran ciudad contada desde diferentes perspectivas.', 2017, 11, 11, 'Ficción', 16.75, 'img11.jpg', 8, 'ACT'),
+('Caminos cruzados', 'Historias de encuentros inesperados.', 2013, 12, 12, 'Romance', 12.60, 'img12.jpg', 4, 'ACT'),
+('Ecos del silencio', 'Drama psicológico en un entorno familiar.', 2022, 13, 13, 'Drama', 14.80, 'img13.jpg', 2, 'ACT'),
+('Horizontes de acero', 'Una historia ambientada en un mundo post-apocalíptico.', 2020, 14, 14, 'Ciencia Ficción', 18.50, 'img14.jpg', 10, 'ACT'),
+('El arte de olvidar', 'Reflexiones profundas sobre el perdón y el olvido.', 2011, 15, 15, 'Filosofía', 9.99, 'img15.jpg', 13, 'ACT');

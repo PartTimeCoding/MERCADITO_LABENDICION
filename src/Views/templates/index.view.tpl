@@ -86,7 +86,7 @@
       <span class="stock">Disponible {{libroStock}}</span>
     </div>
 
-    <form action="index.php?page=index" method="post">
+    <form action="index.php?page=Index" method="post">
       <input type="hidden" name="libroId" value="{{libroId}}">
       <button type="submit" name="addToCart" class="add-to-cart">
         <i class="fa-solid fa-cart-plus"></i> Agregar al Carrito
