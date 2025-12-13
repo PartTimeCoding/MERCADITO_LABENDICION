@@ -8,7 +8,7 @@ CREATE TABLE
         `editorialId` INT NOT NULL,
         `libroGenero` varchar(100) NOT NULL,
         `libroPrecio` decimal(10, 2) NOT NULL,
-        `libroImgUrl` varchar(255) NOT NULL,
+        `libroImgUrl` varchar(1000) NOT NULL,
         `libroStock` int(11) NOT NULL DEFAULT 0,
         `libroEstado` char(3) NOT NULL,
         PRIMARY KEY (`libroId`)

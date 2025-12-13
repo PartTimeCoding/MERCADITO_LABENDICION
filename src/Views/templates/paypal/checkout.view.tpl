@@ -33,7 +33,7 @@
     <span class="col-2 right">{{total}}</span>
   </div>
   <div class="row">
-    <form action="index.php?page=Checkout_Accept" method="post" class="col-12 right">
+    <form action="index.php?page=Checkout_Checkout" method="post" class="col-12 right">
       <button type="submit">Place Order</button>
     </form>
   </div>
