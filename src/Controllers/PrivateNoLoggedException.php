@@ -1,9 +1,7 @@
 <?php
+
 namespace Controllers;
+
 use Exception;
 
-class PrivateNoLoggedException extends Exception
-{
-
-}
-?>
+class PrivateNoLoggedException extends Exception {}

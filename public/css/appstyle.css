@@ -721,7 +721,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    background-color: #bb1900;
+    background-color: #4b63ff;
     color: #ffffff;
     padding: 0px;
     flex-wrap: wrap;
@@ -1039,7 +1039,7 @@
     display: flex;
     width: 100vw;
     height: 90vh;
-    background-color: #bb1900;
+    background-color: #0045bb;
     color: #ffffff;
     position: relative;
   }

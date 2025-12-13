@@ -192,4 +192,28 @@ class Cart extends \Dao\Table
         $result = self::obtenerRegistros($sql, []);
         return array_column($result, 'libroGenero');
     }
+
+    public static function clearAuthCart(int $usercod)
+    {
+        $sqlstr = "DELETE FROM carretilla WHERE usercod = :usercod";
+        return self::executeNonQuery($sqlstr, ["usercod" => $usercod]);
+    }
+
+    public static function clearAnonCart(string $anonCod)
+    {
+        $sqlstr = "DELETE FROM carretillaanon WHERE anoncod = :anoncod";
+        return self::executeNonQuery($sqlstr, ["anoncod" => $anonCod]);
+    }
+
+    public static function reducirStock(int $libroId, int $cantidad)
+    {
+        $sqlstr = "UPDATE libros SET libroStock = libroStock - :cantidad WHERE libroId = :libroId AND libroStock >= :cantidad";
+
+        $params = [
+            "libroId" => $libroId,
+            "cantidad" => $cantidad
+        ];
+
+        return self::executeNonQuery($sqlstr, $params);
+    }
 }

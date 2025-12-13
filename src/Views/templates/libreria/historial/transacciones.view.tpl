@@ -14,7 +14,6 @@
         <span class="col-5">Libro</span>
         <span class="col-2 right">Precio</span>
         <span class="col-2 center">Cantidad</span>
-        <span class="col-3 right">Subtotal</span>
       </div>
 
       {{foreach pedidos}}
@@ -22,7 +21,6 @@
         <span class="col-5">{{libroNombre}} <small>(ID: {{libroId}})</small></span>
         <span class="col-2 right">${{precioUnitario}}</span>
         <span class="col-2 center">{{cantidad}}</span>
-        <span class="col-3 right">${{subtotal}}</span>
       </div>
       {{endfor pedidos}}
 
@@ -32,7 +30,4 @@
       </div>
       <hr>
     {{endfor transacciones}}
-    <div class="row" style="padding: 1rem;">
-      <span class="col-12">No hay transacciones registradas.</span>
-    </div>
 </section>

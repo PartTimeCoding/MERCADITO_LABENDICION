@@ -19,14 +19,11 @@ class Ordenes extends \Dao\Table
 
         self::executeNonQuery($sql, $params);
 
-        $sqlGet = "SELECT ordenId FROM ordenes 
-               WHERE usercod = :usercod 
-               ORDER BY fechaOrden DESC 
-               LIMIT 1";
+        // Usar LAST_INSERT_ID() para obtener el ID de la orden recién creada
+        $sqlGet = "SELECT LAST_INSERT_ID() as ordenId";
+        $result = self::obtenerUnRegistro($sqlGet, []);
 
-        $orden = self::obtenerUnRegistro($sqlGet, ["usercod" => $datos['usercod']]);
-
-        return $orden['ordenId'] ?? null;
+        return $result['ordenId'] ?? null;
     }
 
     public static function obtenerOrdenesPorUsuario($usercod)
